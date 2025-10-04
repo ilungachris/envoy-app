@@ -1,0 +1,17 @@
+{
+  "cli": { "version": ">= 11.0.0" },
+  "build": {
+    "preview": {
+      "developmentClient": false,
+      "distribution": "internal",
+      "android": { "gradleCommand": ":app:assembleRelease" }
+    },
+    "production": {
+      "developmentClient": false,
+      "distribution": "store"
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
